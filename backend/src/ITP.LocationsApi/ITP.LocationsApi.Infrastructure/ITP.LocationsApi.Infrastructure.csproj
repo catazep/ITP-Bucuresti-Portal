@@ -12,4 +12,10 @@
 		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.5" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\..\ITP.Contracts\ITP.Contracts.csproj" />
+	  <ProjectReference Include="..\ITP.LocationsApi.Application\ITP.LocationsApi.Application.csproj" />
+	  <ProjectReference Include="..\ITP.LocationsApi.Domain\ITP.LocationsApi.Domain.csproj" />
+	</ItemGroup>
+
 </Project>
