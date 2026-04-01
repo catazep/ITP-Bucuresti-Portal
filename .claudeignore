@@ -1,0 +1,66 @@
+# Build outputs
+backend/**/bin/
+backend/**/obj/
+frontend/node_modules/
+frontend/dist/
+frontend/.nx/
+frontend/.angular/
+frontend/coverage/
+
+# Visual Studio / IDE artifacts
+.vs/
+**/*.user
+**/*.userprefs
+**/*.suo
+**/*.sln.docstates
+*.aps
+*.ncb
+*.opendb
+*.VC.db
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+.rider/
+*.sln.iml
+
+# Dependencies & locks
+frontend/package-lock.json
+frontend/yarn.lock
+
+# Sensitive files
+appsettings.Development.json
+*.env
+*.env.local
+
+# Testing
+TestResults/
+*.trx
+coverage/
+
+# Migrations (read-only reference)
+**/Migrations/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Docker
+docker-compose.override.yml
+
+# Temporary / build artifacts
+*.tmp
+.temp/
+build/
+publish/
+
+# Git
+.git/
+.github/
