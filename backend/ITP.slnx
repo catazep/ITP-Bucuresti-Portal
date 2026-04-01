@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/src/ITP.Contracts/">
+    <Project Path="src/ITP.Contracts/ITP.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/src/ITP.LocationsApi/">
+    <Project Path="src/ITP.LocationsApi/ITP.LocationsApi.Application/ITP.LocationsApi.Application.csproj" />
+    <Project Path="src/ITP.LocationsApi/ITP.LocationsApi.Domain/ITP.LocationsApi.Domain.csproj" />
+    <Project Path="src/ITP.LocationsApi/ITP.LocationsApi.Infrastructure/ITP.LocationsApi.Infrastructure.csproj" />
+    <Project Path="src/ITP.LocationsApi/ITP.LocationsApi.Presentation/ITP.LocationsApi.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/src/ITP.MainApi/">
+    <Project Path="src/ITP.MainApi/ITP.MainApi.Application/ITP.MainApi.Application.csproj" />
+    <Project Path="src/ITP.MainApi/ITP.MainApi.Domain/ITP.MainApi.Domain.csproj" />
+    <Project Path="src/ITP.MainApi/ITP.MainApi.Infrastructure/ITP.MainApi.Infrastructure.csproj" />
+    <Project Path="src/ITP.MainApi/ITP.MainApi.Presentation/ITP.MainApi.Presentation.csproj" />
+  </Folder>
+</Solution>
