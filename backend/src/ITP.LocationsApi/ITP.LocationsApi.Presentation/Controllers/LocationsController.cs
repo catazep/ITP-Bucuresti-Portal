@@ -18,16 +18,8 @@ namespace ITP.LocationsApi.Presentation.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Location>>> GetAllAsync([FromQuery] string excluded, CancellationToken ct)
+        public async Task<ActionResult<List<Location>>> GetAllAsync([FromQuery] IList<LocationStatus> excludedStatuses, CancellationToken ct)
         {
-            // TODO: perhaps make an enum parser interceptor as an excercise
-            var excludedStatuses = excluded?
-                .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-                .Select(s => Enum.TryParse<LocationStatus>(s, true, out var status) ? status : (LocationStatus?)null)
-                .OfType<LocationStatus>() // Filters out the nulls (failed parses)
-                .ToList()
-
-        ?? new List<LocationStatus>();
             var locations = await _locationRepository.GetAllAsync(excludedStatuses, ct);
             return Ok(locations);
         }
