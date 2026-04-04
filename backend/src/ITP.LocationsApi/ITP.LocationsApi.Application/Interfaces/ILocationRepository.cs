@@ -4,7 +4,7 @@ namespace ITP.LocationsApi.Application.Interfaces
 {
     public interface ILocationRepository
     {
-        Task<List<Location>> GetAllAsync(List<LocationStatus> excludedStatuses, CancellationToken ct = default);
+        Task<List<Location>> GetAllAsync(IList<LocationStatus> excludedStatuses, CancellationToken ct = default);
         Task<Location?> GetByIdAsync(Guid id, CancellationToken ct = default);
         Task<int> AddAsync(Location location, CancellationToken ct = default);
         Task<int> UpdateAsync(Location location, CancellationToken ct = default);

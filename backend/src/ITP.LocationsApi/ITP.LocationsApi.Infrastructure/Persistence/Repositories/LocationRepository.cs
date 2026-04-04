@@ -13,7 +13,7 @@ namespace ITP.LocationsApi.Infrastructure.Persistence.Repositories
             _context = context;
         }
 
-        public async Task<List<Location>> GetAllAsync(List<LocationStatus> excludedStatuses, CancellationToken ct = default)
+        public async Task<List<Location>> GetAllAsync(IList<LocationStatus> excludedStatuses, CancellationToken ct = default)
         {
             return await _context.Locations.Where(l => !excludedStatuses.Contains(l.Status)).ToListAsync(ct);
         }
